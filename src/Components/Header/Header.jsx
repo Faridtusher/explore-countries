@@ -8,7 +8,7 @@ const Header = () => {
          <header className="bg-gray-800 text-white p-8">
             <nav className='text-center '>
                <Link to='/countries' className="hover:text-gray-300">Countries</Link>
-               <Link to="/country" className="hover:text-gray-300 ml-10">CountryDetails</Link>
+               <Link to="/countryDetails" className="hover:text-gray-300 ml-10">CountryDetails</Link>
             </nav>
         </header>  
          

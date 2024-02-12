@@ -7,7 +7,8 @@ import {
 import './index.css'
 import Home from './Components/Home/Home';
 import Countries from './Components/Countries/Countries';
-import Country from './Components/Country/Country';
+import CountryDetails from './Components/CountryDetails/CountryDetails';
+import NotFound from './Components/NotFound/NotFound';
 
 
 const router = createBrowserRouter([
@@ -16,13 +17,27 @@ const router = createBrowserRouter([
     element:<Home></Home>,
     children:[
       {
+        path:'/',
+        element:<Countries></Countries>,
+      },
+
+       {
         path:'/countries',
         element:<Countries></Countries>,
       },
 
       {
-        path:'/country',
-        element:<Country></Country>
+        path:'countryDetails',
+        element:<CountryDetails></CountryDetails>,
+
+       
+      },
+
+
+
+      {
+        path:'*',
+        element:<NotFound></NotFound>
       }
     ]
   }
