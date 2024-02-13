@@ -10,7 +10,6 @@ import Countries from './Components/Countries/Countries';
 import CountryDetails from './Components/CountryDetails/CountryDetails';
 import NotFound from './Components/NotFound/NotFound';
 
-
 const router = createBrowserRouter([
   {
     path:'/',
@@ -51,7 +50,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <RouterProvider
       router={router}
     ></RouterProvider>
-    
-    
   </React.StrictMode>,
 )
