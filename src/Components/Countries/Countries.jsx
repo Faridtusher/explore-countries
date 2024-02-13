@@ -26,6 +26,7 @@ const Countries = () => {
                onChange={(e) => setSearchTerm(e.target.value)}
             />
          </div>
+         
 
          <div className='grid grid-cols-4 gap-4 m-10'>
             {filteredCountries.map(country => (
