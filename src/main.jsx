@@ -26,14 +26,16 @@ const router = createBrowserRouter([
         element:<Countries></Countries>,
       },
 
-      {
+       {
         path:'countryDetails',
         element:<CountryDetails></CountryDetails>,
-
-       
       },
 
-
+        {
+        path:'countryDetails/:countryDetailsId',
+        element:<CountryDetails></CountryDetails>,
+        loader:({params}) => fetch(`https://restcountries.com/v3.1/alpha/${params.countryDetailsId}`)
+      },
 
       {
         path:'*',
